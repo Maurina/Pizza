@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pizza Emporium</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+      <header>
+          <h1> Pizza Emporium</h1>
+          <h2>Literal Objects</h2>
+      </header>
+
+      <main>
+        <h3>Pizza Order Form</h3>
+        <h4>What I learned</h4>
+        <ul>
+            <li>Create a literal object with properties and methods</li>
+            <li>Set the properties in an object</li>
+            <li>Access the properites in an object</li>
+            <li>Access the methods of an object</li>
+            <li>Use math operators</li>
+            <li>Use string concatenation</li>
+            <li>Use getElementById and innerHTML to dynamically change text on the screen</li>
+        </ul>
+
+<div class="infomation">
+        
+    <div class="left">
+        <h4>Crust</h4>
+        <button id="thin" onclick="pizza.crust='thin'">Thin Crust</button>
+        <button id="thick" onclick="pizza.crust='thick'">Thick Crust</button>
+
+        <h4>Topping Options</h4>
+        <button id="sausage" onclick="pizza.topping='sausage'">Sausage</button>
+        <button id="peperoni" onclick="pizza.topping='peperoni'">Peperoni</button>
+
+        <h4>Size Options</h4>
+        <button id="small" onclick="pizza.size='small'">Small</button>
+        <button id="large" onclick="pizza.size='large'">Large</button>
+    </div><!--left-->
+
+    <div class="middle">
+        <h4>Time to Eat</h4>
+        <button id="Build" onclick="pizza.messagePizza()">Build Pizza</button>
+
+        <h4>Shopping List</h4>
+        <button id="shopping" onclick="messageShopping()">Shopping List</button>
+</div><!--middle-->
+
+<div class="right">
+        <h4>Order</h4>
+        <div id="textHere"></div>
+
+        <h4>Shopping List</h4>
+        <div id="textShopping"></div>
+</div><!--right-->
+</div><!--information-->
+      </main>
+
+      <footer>
+          <p> &bull; Maurina Davis &bull; 2019</p>
+      </footer>
+        
+        <script src="main.js" async defer></script>
+    </body>
+</html>
